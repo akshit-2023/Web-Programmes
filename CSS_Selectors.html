@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            /*background-color: red;*/
+        }
+        /*Class selector*/
+        .red{
+            background-color: red;
+        }
+        /*ID Selector*/
+        #green{
+            background-color: green;
+        }
+        /*Child Selector*/
+        div > p{
+            color: brown;
+            background-color: pink;
+        }
+
+        /*Descendant Selector*/
+        div p{
+            background-color: aqua;
+            color: blueviolet;
+        }
+
+        /*Universal Selector*/
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*Pseudo Selectors*/
+        a:visited{
+            color: pink;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: red;
+            background-color: purple;
+        }
+        div:hover{
+            background-color: black;
+        }
+        a:hover{
+            background-color: fuchsia;
+        }
+        p:first-child{
+            background-color: rebeccapurple;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first p.</p>
+        <p>I am Second p.</p>
+    </main>    
+    <div>
+        This is div.
+        <p>Paragraph inside first div</p>
+        <article>
+            <p>This paragraph is inside article inside div but not considered inside div so child selector won't work. </p>
+        </article>
+    </div>
+    <div class="red">
+        This is another div.
+    </div>
+    <div id="green">
+        This is 3 div.
+    </div>
+    <a target="_blank" href="https://www.google.com">Go to Google</a>
+</body>
+</html>

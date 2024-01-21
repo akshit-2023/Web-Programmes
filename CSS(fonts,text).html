@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts,Text and Color properties </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+
+        p {
+            font-family: 'Rubik Burned', system-ui;
+            /*These are comma seperated if one is not available in the system it will try to apply next font*/
+            font-style: italic;
+            font-weight: 500;
+            /*Controls Boldness*/
+            text-decoration: underline;
+            font-size: 20px;
+            line-height: 3;
+            /*space between lines*/
+            letter-spacing: 3px;
+            /*letter spacing*/
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: oblique;
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: capitalize;
+            text-transform: lowercase;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text: decoration thickness 7px;
+            text-indent: 40px;
+            text-overflow: ellipsis;
+            text-decoration-color: aqua;
+        }
+
+        .lorem {
+            border: 2px solid red;
+            width: 145px;
+            word-break: break-all;
+            /*overflow: hidden;
+            text-overflow: clip;*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fonts</h1>
+    <h2>about Fonts</h2>
+    <p>This is about fonts</p>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus numquam eum dolorum
+        libero omnis officia! Accusantium tempora ut eaque dolorem nesciunt voluptatibus corrupti iste temporibus?
+        Earum, ad sint veritatis aut magnam asperiores! Impedit sequi ex nostrum voluptate, labore beatae adipisci
+        accusantium! Adipisci, reiciendis deserunt?</p>
+</body>
+
+</html>

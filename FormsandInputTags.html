@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h1>Form Sample</h1>
+    <form action="post">
+    <div>
+        <label for="username">Enter your username</label>
+        <input type="text" id="username" name="Username" placeholder="Enter Name">
+    </div>
+
+    <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <!--if name is same as in this case only one option at a time can be selected either male or female-->
+    </div>
+
+    <div>
+        <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+        <label for="subscribe">Subscribe to newsletter</label>
+    </div>
+    
+    <div>
+        <label for="comment">Enter your comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10">
+        </textarea>
+    </div>
+    <div>
+
+        <select name="name" id="">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="orange">Orange</option>
+        </select>
+    </div>
+    </form>
+</body>
+</html>
